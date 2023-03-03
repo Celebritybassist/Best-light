@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from foodia.dexignzone.com/xhtml/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Feb 2023 19:47:25 GMT -->
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+	<meta name="theme-color" content="#2196f3">
+	<meta name="author" content="DexignZone" /> 
+    <meta name="keywords" content="" /> 
+    <meta name="robots" content="" /> 
+	<meta name="description" content="Foodia - Food Restaurant Mobile App Template ( Bootstrap 5 + PWA )"/>
+	<meta property="og:title" content="Foodia - Food Restaurant Mobile App Template ( Bootstrap 5 + PWA )" />
+	<meta property="og:description" content="Foodia - Food Restaurant Mobile App Template ( Bootstrap 5 + PWA )" />
+	<meta property="og:image" content="../../makaanlelo.com/tf_products_007/foodia/xhtml/social-image.html"/>
+	<meta name="format-detection" content="telephone=no">
+
+    <!--chat forum-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'><link rel="stylesheet" href="./assets/style.css">
+	
+    <!-- Favicons Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/best-light.jpg" />
+    
+    <!-- Title -->
+	<title>Best-light - Pizzeria and chops</title>
+
+    <!--Chat widget for whatsapp-->
+	<script defer src="https://widget.tochat.be/bundle.js?key=b998eb59-6c89-48d7-8ab7-c6e1002573ac"></script>
+    
+	<!-- PWA Version -->
+	<link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&amp;family=Roboto+Slab:wght@100;300;500;600;800&amp;display=swap" rel="stylesheet">
+
+<style>
+    .btn-tn{
+        width: 100%;
+        height: 50px;
+        background-color: #42A7E5;
+        font-size: 1.2rem;
+        font-family: 'segoe UI';
+        color: #fff;
+        margin-top: 25px;
+        border: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position:absolute;
+        bottom:0;
+        left:0;
+
+    }
+    .btn-tn:hover{
+        width: 100%;
+        height: 50px;
+        background-color: #1e90d6;;
+        font-size: 1.2rem;
+        font-family: 'segoe UI';
+        color: #ced4da;
+        margin-top: 25px;
+        border: none;
+        text-shadow: 1px 2px 8px #212121;
+        box-shadow: 1px 2px 8px #ced4da;
+    }
+    #heart-svg {
+  cursor: pointer;
+  overflow: visible;
+  width: 60px;
+  margin: 20px;
+}
+
+svg #heart {
+  transform-origin: center;
+  animation: animateHeartOut .3s linear forwards;
+}
+
+svg #main-circ {
+  transform-origin: 29.5px 29.5px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked+label svg #heart {
+  transform: scale(0.2);
+  fill: #E2264D;
+  animation: animateHeart .3s linear forwards .25s;
+}
+
+.checkbox:checked+label svg #main-circ {
+  transition: all 2s;
+  animation: animateCircle .3s linear forwards;
+  opacity: 1;
+}
+
+.checkbox:checked+label svg #grp1 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #grp1 #oval1 {
+  transform: scale(0) translate(0, -30px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp1 #oval2 {
+  transform: scale(0) translate(10px, -50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp2 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #grp2 #oval1 {
+  transform: scale(0) translate(30px, -15px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp2 #oval2 {
+  transform: scale(0) translate(60px, -15px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp3 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #grp3 #oval1 {
+  transform: scale(0) translate(30px, 0px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp3 #oval2 {
+  transform: scale(0) translate(60px, 10px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp4 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #grp4 #oval1 {
+  transform: scale(0) translate(30px, 15px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp4 #oval2 {
+  transform: scale(0) translate(40px, 50px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp5 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #grp5 #oval1 {
+  transform: scale(0) translate(-10px, 20px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp5 #oval2 {
+  transform: scale(0) translate(-60px, 30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp6 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #grp6 #oval1 {
+  transform: scale(0) translate(-30px, 0px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp6 #oval2 {
+  transform: scale(0) translate(-60px, -5px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp7 {
+  opacity: 1;
+  transition: .1s all .3s;
+}
+
+.checkbox:checked+label svg #grp7 #oval1 {
+  transform: scale(0) translate(-30px, -15px);
+  transform-origin: 0 0 0;
+  transition: .5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp7 #oval2 {
+  transform: scale(0) translate(-55px, -30px);
+  transform-origin: 0 0 0;
+  transition: 1.5s transform .3s;
+}
+
+.checkbox:checked+label svg #grp2 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #grp3 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #grp4 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #grp5 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #grp6 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+.checkbox:checked+label svg #grp7 {
+  opacity: 1;
+  transition: .1s opacity .3s;
+}
+
+@keyframes animateCircle {
+  40% {
+    transform: scale(10);
+    opacity: 1;
+    fill: #DD4688;
+  }
+  55% {
+    transform: scale(11);
+    opacity: 1;
+    fill: #D46ABF;
+  }
+  65% {
+    transform: scale(12);
+    opacity: 1;
+    fill: #CC8EF5;
+  }
+  75% {
+    transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: .5;
+  }
+  85% {
+    transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: .2;
+  }
+  95% {
+    transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: .1;
+  }
+  100% {
+    transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #CC8EF5;
+    stroke-width: 0;
+  }
+}
+
+@keyframes animateHeart {
+  0% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateHeartOut {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+</head>   
+<body class="bg-white">
+<div class="page-wraper">
+    
+    <!-- Header -->
+	<header class="header transparent">
+		<div class="main-bar">
+			<div class="container">
+				<div class="header-content">
+					<div class="left-content">
+                        <img src="assets/images/best-light.jpg" alt="logo" width="300">
+						<!-- <a href="javascript:void(0);" class="menu-toggler">
+							<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="#000000"><path d="M13 14v6c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1zm-9 7h6c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1zM3 4v6c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1zm12.95-1.6L11.7 6.64c-.39.39-.39 1.02 0 1.41l4.25 4.25c.39.39 1.02.39 1.41 0l4.25-4.25c.39-.39.39-1.02 0-1.41L17.37 2.4c-.39-.39-1.03-.39-1.42 0z"/></svg>
+						</a> -->
+					</div>
+					<div class="mid-content">
+					</div>
+					<div class="right-content">
+                        <a href="javascript:void(0);" class="theme-color" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                            <!-- <svg class="color-plate" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="#000000">
+								<path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+							</svg> -->
+                        </a>
+                        <a href="javascript:void(0);" class="theme-btn">
+                            <svg class="dark" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g></g><g><g><g><path d="M11.57,2.3c2.38-0.59,4.68-0.27,6.63,0.64c0.35,0.16,0.41,0.64,0.1,0.86C15.7,5.6,14,8.6,14,12s1.7,6.4,4.3,8.2 c0.32,0.22,0.26,0.7-0.09,0.86C16.93,21.66,15.5,22,14,22c-6.05,0-10.85-5.38-9.87-11.6C4.74,6.48,7.72,3.24,11.57,2.3z"/></g></g></g>
+							</svg>
+							<svg class="light" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg>
+                        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <!-- Header End -->
+    
+    <!-- Preloader -->
+	<div id="preloader">
+		<div class="spinner"></div>
+	</div>
+    <!-- Preloader end-->
+    
+    <!-- Banner -->
+	<div class="author-notification">
+		<div class="container inner-wrapper">
+			<div class="dz-info">
+				<span class="text-dark">Hey Everyone</span>
+				<h3 class="name mb-0"  style="font-size: .8rem;">Welcome to Best light pizzeria and Chops 👋</h3>
+			</div>
+			<!-- <a href="javascript:void(0);" class="position-relative me-2 notify-cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.1776 17.8443C16.6362 17.8428 15.3854 19.0912 15.3839 20.6326C15.3824 22.1739 16.6308 23.4247 18.1722 23.4262C19.7136 23.4277 20.9643 22.1794 20.9658 20.638C20.9658 20.6371 20.9658 20.6362 20.9658 20.6353C20.9644 19.0955 19.7173 17.8473 18.1776 17.8443Z" fill="#2C406E"/>
+                    <path d="M23.1278 4.47973C23.061 4.4668 22.9932 4.46023 22.9251 4.46012H5.93181L5.66267 2.65958C5.49499 1.46381 4.47216 0.574129 3.26466 0.573761H1.07655C0.481978 0.573761 0 1.05574 0 1.65031C0 2.24489 0.481978 2.72686 1.07655 2.72686H3.26734C3.40423 2.72586 3.52008 2.82779 3.53648 2.96373L5.19436 14.3267C5.42166 15.7706 6.66363 16.8358 8.12528 16.8405H19.3241C20.7313 16.8423 21.9454 15.8533 22.2281 14.4747L23.9802 5.74121C24.0931 5.15746 23.7115 4.59269 23.1278 4.47973Z" fill="#2C406E"/>
+                    <path d="M11.3404 20.5158C11.2749 19.0196 10.0401 17.8418 8.54244 17.847C7.0023 17.9092 5.80422 19.2082 5.86645 20.7484C5.92617 22.2262 7.1283 23.4008 8.60704 23.4262H8.67432C10.2142 23.3587 11.4079 22.0557 11.3404 20.5158Z" fill="#2C406E"/>
+                </svg>
+				<span class="badge badge-danger counter">5</span>
+			</a>	 -->
+		</div>
+	</div>
+    <!-- Banner End -->
+    
+    <!-- Page Content -->
+    <div class="page-content">
+        
+        <div class="content-inner pt-0">
+			<div class="container fb">
+                <!-- Dashboard Area -->
+                
+					<!-- Recomended Start -->
+                    <div class="title-bar">
+                        <h5 class="title">Recomended 👌</h5>
+                    </div>
+                    
+                    <div class="swiper-btn-center">
+                        <div class="swiper-container tag-group mt-4 recomanded-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="recomended-list" style="height: 300px; width: 300px; border-radius: 15px;">
+                                        <div class="image-box">
+                                            <img src="assets/images/food/pizza.jpg" alt="image">
+                                        </div>
+                                        <div class="text-content">
+                                            <h6 class="title">Pizza with beef and chicken</h6>
+                                            <div class="d-flex justify-content-between align-items-center m-t10" style="margin-top: -20px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a type="button" onClick="onClick()">
+                                                        <input type="checkbox" class="checkbox" id="checkbox"/>
+                                                        <label for="checkbox" style="margin-left: -35px;">
+                                                              <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                                                <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                                                  <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#AAB8C2"/>
+                                                                  <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                                                        
+                                                                  <g id="grp7" opacity="0" transform="translate(7 6)">
+                                                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                                                  </g>
+                                                        
+                                                                  <g id="grp6" opacity="0" transform="translate(0 28)">
+                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                                                  </g>
+                                                        
+                                                                  <g id="grp3" opacity="0" transform="translate(52 28)">
+                                                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                                                  </g>
+                                                        
+                                                                  <g id="grp2" opacity="0" transform="translate(44 6)">
+                                                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                                                  </g>
+                                                        
+                                                                  <g id="grp5" opacity="0" transform="translate(14 50)">
+                                                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                                                  </g>
+                                                        
+                                                                  <g id="grp4" opacity="0" transform="translate(35 50)">
+                                                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                                                  </g>
+                                                        
+                                                                  <g id="grp1" opacity="0" transform="translate(24)">
+                                                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                                                  </g>
+                                                                </g>
+                                                              </svg>
+                                                            </label>
+                                                    </a>
+                                                    <!-- <h5 class="mb-0 ms-2 number" id="clicks" style=""></h5> -->
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-0 ms-2 text-primary">#7000</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       <div>
+                                        <button class="btn-tn">
+                                            Order now
+                                        </button>
+                                       </div>
+                                        
+                                    </div>      
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recomended-list" style="height: 300px; width: 300px; border-radius: 15px;">
+                                        <div class="image-box">
+                                            <img src="assets/images/food/nigerian-shawarma.jpg" alt="image">
+                                        </div>
+                                        <div class="text-content">
+                                            <h6 class="title">Sharwama with Hot-dog and chicken</h6>
+                                            <div class="d-flex justify-content-between align-items-center m-t10" style="margin-top: -20px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <input type="checkbox" class="checkbox" id="checkbox"/>
+                                                    <label for="checkbox" style="margin-left: -35px;">
+                                                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                                              <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#AAB8C2"/>
+                                                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                                                    
+                                                              <g id="grp7" opacity="0" transform="translate(7 6)">
+                                                                <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                                                <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp6" opacity="0" transform="translate(0 28)">
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp3" opacity="0" transform="translate(52 28)">
+                                                                <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp2" opacity="0" transform="translate(44 6)">
+                                                                <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp5" opacity="0" transform="translate(14 50)">
+                                                                <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp4" opacity="0" transform="translate(35 50)">
+                                                                <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp1" opacity="0" transform="translate(24)">
+                                                                <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                                                <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                                              </g>
+                                                            </g>
+                                                          </svg>
+                                                        </label>
+                                                    <!-- <h5 class="mb-0 ms-2 number">4.6</h5> -->
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-0 ms-2 text-primary">#2,500</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn-tn">
+                                                Order now
+                                            </button>
+                                           </div>
+                                    </div>      
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recomended-list" style="height: 300px; width: 300px; border-radius: 15px;">
+                                        <div class="image-box">
+                                            <img src="assets/images/food/barbecue.jpg" alt="image">
+                                        </div>
+                                        <div class="text-content">
+                                            <h6 class="title">Barbecue fish with chips and salad</h6>
+                                            <div class="d-flex justify-content-between align-items-center m-t10" style="margin-top: -20px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <input type="checkbox" class="checkbox" id="checkbox"/>
+                                                    <label for="checkbox" style="margin-left: -35px;">
+                                                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                                              <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#AAB8C2"/>
+                                                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                                                    
+                                                              <g id="grp7" opacity="0" transform="translate(7 6)">
+                                                                <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                                                <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp6" opacity="0" transform="translate(0 28)">
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp3" opacity="0" transform="translate(52 28)">
+                                                                <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp2" opacity="0" transform="translate(44 6)">
+                                                                <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp5" opacity="0" transform="translate(14 50)">
+                                                                <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp4" opacity="0" transform="translate(35 50)">
+                                                                <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp1" opacity="0" transform="translate(24)">
+                                                                <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                                                <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                                              </g>
+                                                            </g>
+                                                          </svg>
+                                                        </label>
+                                                    <!-- <h5 class="mb-0 ms-2 number">4.6</h5> -->
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-0 ms-2 text-primary">#5,000</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn-tn">
+                                                Order now
+                                            </button>
+                                           </div>
+                                    </div>      
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recomended-list" style="height: 300px; width: 300px; border-radius: 15px;">
+                                        <div class="image-box">
+                                            <img src="assets/images/food/Small-Chops.jpg" alt="image">
+                                        </div>
+                                        <div class="text-content">
+                                            <h6 class="title">Fried Rice with chicken and salad</h6>
+                                            <div class="d-flex justify-content-between align-items-center m-t10" style="margin-top: -20px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <input type="checkbox" class="checkbox" id="checkbox"/>
+                                                    <label for="checkbox" style="margin-left: -35px;">
+                                                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                                              <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#AAB8C2"/>
+                                                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                                                    
+                                                              <g id="grp7" opacity="0" transform="translate(7 6)">
+                                                                <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                                                <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp6" opacity="0" transform="translate(0 28)">
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp3" opacity="0" transform="translate(52 28)">
+                                                                <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp2" opacity="0" transform="translate(44 6)">
+                                                                <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp5" opacity="0" transform="translate(14 50)">
+                                                                <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp4" opacity="0" transform="translate(35 50)">
+                                                                <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp1" opacity="0" transform="translate(24)">
+                                                                <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                                                <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                                              </g>
+                                                            </g>
+                                                          </svg>
+                                                        </label>
+                                                    <!-- <h5 class="mb-0 ms-2 number">4.6</h5> -->
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-0 ms-2 text-primary">#3,000</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn-tn">
+                                                Order now
+                                            </button>
+                                           </div>
+                                    </div>      
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recomended-list" style="height: 300px; width: 300px; border-radius: 15px;">
+                                        <div class="image-box">
+                                            <img src="assets/images/food/fried-rice.jpg" alt="image">
+                                        </div>
+                                        <div class="text-content">
+                                            <h6 class="title">Fried Rice and Turkey</h6>
+                                            <div class="d-flex justify-content-between align-items-center m-t10" style="margin-top: -20px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <input type="checkbox" class="checkbox" id="checkbox"/>
+                                                    <label for="checkbox" style="margin-left: -35px;">
+                                                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                                              <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#AAB8C2"/>
+                                                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                                                    
+                                                              <g id="grp7" opacity="0" transform="translate(7 6)">
+                                                                <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                                                <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp6" opacity="0" transform="translate(0 28)">
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp3" opacity="0" transform="translate(52 28)">
+                                                                <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp2" opacity="0" transform="translate(44 6)">
+                                                                <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp5" opacity="0" transform="translate(14 50)">
+                                                                <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp4" opacity="0" transform="translate(35 50)">
+                                                                <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp1" opacity="0" transform="translate(24)">
+                                                                <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                                                <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                                              </g>
+                                                            </g>
+                                                          </svg>
+                                                        </label>
+                                                    <!-- <h5 class="mb-0 ms-2 number">4.6</h5> -->
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-0 ms-2 text-primary">#3,500</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn-tn" style="margin-top: -1px;">
+                                                Order now
+                                            </button>
+                                           </div>
+                                    </div>      
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recomended-list" style="height: 300px; width: 300px; border-radius: 15px;">
+                                        <div class="image-box">
+                                            <img src="assets/images/food/indomie.jpg" alt="image">
+                                        </div>
+                                        <div class="text-content">
+                                            <h6 class="title">Deluxe Burger with Extra Beef & Eggs</h6>
+                                            <div class="d-flex justify-content-between align-items-center m-t10" style="margin-top: -20px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <input type="checkbox" class="checkbox" id="checkbox"/>
+                                                    <label for="checkbox" style="margin-left: -35px;">
+                                                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                                              <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#AAB8C2"/>
+                                                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                                                    
+                                                              <g id="grp7" opacity="0" transform="translate(7 6)">
+                                                                <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                                                <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp6" opacity="0" transform="translate(0 28)">
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp3" opacity="0" transform="translate(52 28)">
+                                                                <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                                                <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp2" opacity="0" transform="translate(44 6)">
+                                                                <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                                                <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp5" opacity="0" transform="translate(14 50)">
+                                                                <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp4" opacity="0" transform="translate(35 50)">
+                                                                <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                                                <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                                              </g>
+                                                    
+                                                              <g id="grp1" opacity="0" transform="translate(24)">
+                                                                <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                                                <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                                              </g>
+                                                            </g>
+                                                          </svg>
+                                                        </label>
+                                                    <!-- <h5 class="mb-0 ms-2 number">4.6</h5> -->
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-0 ms-2 text-primary">#4,500</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn-tn">
+                                                Order now
+                                            </button>
+                                           </div>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<!-- Recomended Start -->
+				</div>
+			</div>    
+		</div>
+        
+    </div>    
+    <!-- Page Content End-->
+    
+    <!-- Menubar -->
+	<div class="menubar-area mt-auto" style="margin-top: -20px;">
+		<div class="text-center">
+             <p class="nav-link title" style="margin:0 auto; display:block !important">
+                <p>For Enquiries Call Us:<br><small>098089789808</small></p></p>
+                Designed by Revox Tech Solutions
+            </p>
+		</div>
+	</div>
+	<!-- Menubar -->
+	
+	<!-- PWA Offcanvas -->
+	<div class="offcanvas offcanvas-bottom pwa-offcanvas" style="margin-top:-300px">
+		<div class="container">
+			<div class="offcanvas-body small">
+				<img class="logo" src="assets/images/best-light.jpg" alt="">
+				<h5 class="title">Best-light Pizzeria and chops.</h5>
+				<p>We offer you nice delicacies and outstanding chops. send us a message to place an order.</p>
+				<a href="https://services.tochat.be/api/business/send/9f7864a7-a81a-49c3-aea5-6ceab14e5f21" class="btn btn-sm btn-primary pwa-btn">send us a message</a>
+				<!-- <a href="javascrpit:void(0);" class="btn btn-sm pwa-close light btn-secondary ms-2">Maybe later</a> -->
+			</div>
+		</div>
+	</div>
+	<div class="offcanvas-backdrop pwa-backdrop"></div>
+	<!-- PWA Offcanvas End -->
+    <script  src="./assets/script.js"></script>
+	
+</div>  
+<!--**********************************
+    Scripts
+***********************************-->
+<!-- <script>
+    var clicks = 0;
+
+        function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+        };
+</script> -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+<script src="assets/js/dz.carousel.js"></script><!-- Swiper -->
+<script src="assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script><!-- Swiper -->
+<script src="assets/js/settings.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="index.js" defer></script>
+<script>
+    $(".stepper").TouchSpin();
+</script>
+</body>
+
+<!-- Mirrored from foodia.dexignzone.com/xhtml/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Feb 2023 19:48:02 GMT -->
+</html>
